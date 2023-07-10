@@ -1,0 +1,57 @@
+/* color:
+#86c232
+#222629 
+#61892f
+*/
+
+.navigasi{
+  display: flex;
+  color: white;
+  height: 100px;
+  background-color: #61892f;
+  justify-content:space-between;
+  align-items: center;
+  font-size:20px;
+  padding: 0 100px;
+}
+.logo{
+  width: 80px;
+}
+.left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 0.7;
+  font-weight: bold;
+  font-size: x-large;
+
+}
+.right{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+
+}
+.login{
+  color: white;
+  border: 2px white solid;
+  padding: 10px; 
+  border-radius: 5px;
+  cursor:pointer;
+}
+.signup{
+  color: #ffffff;
+  background-color: #86c232;
+  border: 2px #86c232 solid;
+  padding: 10px; 
+  border-radius: 5px;
+  cursor:pointer;
+}
+.signup:hover{
+  background-color: #76a838;
+}
+span{
+  color:#86c232 ;
+  -webkit-text-stroke: 0.5px black;
+}

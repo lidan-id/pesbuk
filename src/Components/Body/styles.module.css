@@ -1,0 +1,15 @@
+.body-1{
+    display: flex;
+    align-items: center;
+    height: 400px;
+    padding: 0 100px;
+}
+.left-text{
+    color: black;
+    font-size: xx-large;
+
+}
+
+.left {
+    background-color: red
+}

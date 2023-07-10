@@ -1,0 +1,9 @@
+.hai{
+    height: 100px;
+    transition : 1s all;
+}
+
+.hai-active {
+    background-color: red;
+    color : white
+}
