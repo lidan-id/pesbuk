@@ -4,12 +4,15 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import logo from "./logo.png";
 import { useEffect, useState } from "react";
+import LoginModal from "../../Modals/LoginModal";
+import RegisterModal from "../../Modals/RegisterModal";
 const Header = () => {
   useEffect(() => {
     Aos.init();
   }, []);
 
-  const navigate = useNavigate();
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
 
   return (
     <>
@@ -24,15 +27,38 @@ const Header = () => {
           <div
             className={styles.login}
             onClick={() => {
-              navigate("/login");
+              setIsLoginModalOpen(true);
             }}
           >
             LOG IN
           </div>
-          <div className={styles.signup}>SIGN UP</div>
+          <div
+            className={styles.signup}
+            onClick={() => {
+              setIsRegisterModalOpen(true);
+            }}
+          >
+            SIGN UP
+          </div>
         </div>
       </div>
       {/* <button onClick={()=>{navigate('/about')}}>SEE ABOUT</button> */}
+      <LoginModal
+        open={isLoginModalOpen}
+        onClose={() => {
+          setIsLoginModalOpen(false);
+        }}
+      />
+      <RegisterModal
+        open={isRegisterModalOpen}
+        onClose={() => {
+          setIsRegisterModalOpen(false);
+        }}
+        alreadyUser={() => {
+          setIsRegisterModalOpen(false);
+          setIsLoginModalOpen(true);
+        }}
+      />
     </>
   );
 };
