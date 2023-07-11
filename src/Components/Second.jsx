@@ -19,7 +19,7 @@ const Second = () => {
           transition: "2s all",
           left: 0,
           right: value ? 0 : "100%",
-          top: 0,
+
           textAlign: "right",
         }}
       >

@@ -3,15 +3,14 @@ import styles from "./styles.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import logo from "./logo.png";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 const Header = () => {
   useEffect(() => {
     Aos.init();
   }, []);
 
-  // const navigate = useNavigate();
-  cons;
-  function signUp() {}
+  const navigate = useNavigate();
+
   return (
     <>
       <div className={styles.navigasi}>
@@ -22,10 +21,15 @@ const Header = () => {
           </div>
         </div>
         <div className={styles.right}>
-          <div className={styles.login} onClick={signUp}>
+          <div
+            className={styles.login}
+            onClick={() => {
+              navigate("/login");
+            }}
+          >
             LOG IN
           </div>
-          <div className={styles.signUp}>SIGN UP</div>
+          <div className={styles.signup}>SIGN UP</div>
         </div>
       </div>
       {/* <button onClick={()=>{navigate('/about')}}>SEE ABOUT</button> */}

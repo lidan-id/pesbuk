@@ -8,7 +8,7 @@
   display: flex;
   color: white;
   height: 100px;
-  background-color: #61892f;
+  background-color: #000000;
   justify-content:space-between;
   align-items: center;
   font-size:20px;
@@ -40,15 +40,19 @@
   border-radius: 5px;
   cursor:pointer;
 }
+.login:hover{
+  transform: scale(1.1);
+}
 .signup{
   color: #ffffff;
-  background-color: #86c232;
+  background-color: #63aa00;
   border: 2px #86c232 solid;
   padding: 10px; 
   border-radius: 5px;
   cursor:pointer;
 }
 .signup:hover{
+  transform: scale(1.1);
   background-color: #76a838;
 }
 span{
