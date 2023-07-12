@@ -31,7 +31,7 @@ function RegisterModal({ open, onClose, alreadyUser }) {
             </div>
             <div className="form-group was-validated mb-2">
               <label htmlFor="username" className="form-label">
-                EMAIL
+                Email
               </label>
               <input className="form-control " type="email" required />
               <div className="invalid-feedback">
@@ -40,7 +40,7 @@ function RegisterModal({ open, onClose, alreadyUser }) {
             </div>
             <div className="form-group was-validated mb-2">
               <label htmlFor="username" className="form-label">
-                PASSWORD
+                Password
               </label>
               <input className="form-control " type="text" required />
               <div className="invalid-feedback">

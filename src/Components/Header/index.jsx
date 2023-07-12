@@ -6,6 +6,7 @@ import logo from "./logo.png";
 import { useEffect, useState } from "react";
 import LoginModal from "../../Modals/LoginModal";
 import RegisterModal from "../../Modals/RegisterModal";
+import LoginToast from "../Toast/LoginToast";
 const Header = () => {
   useEffect(() => {
     Aos.init();
@@ -13,6 +14,7 @@ const Header = () => {
 
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
+  const [isLoginSubmited, setIsLoginSubmited] = useState(false);
 
   return (
     <>
@@ -20,7 +22,7 @@ const Header = () => {
         <div className={styles.left}>
           <img className={styles.logo} src={logo} alt="" />
           <div>
-            <span>PES</span>BUK
+            <span className={styles.pes}>PES</span>BUK
           </div>
         </div>
         <div className={styles.right}>
@@ -48,6 +50,10 @@ const Header = () => {
         onClose={() => {
           setIsLoginModalOpen(false);
         }}
+        submited={() => {
+          setIsLoginModalOpen(false);
+          setIsLoginSubmited(true);
+        }}
       />
       <RegisterModal
         open={isRegisterModalOpen}
@@ -57,6 +63,12 @@ const Header = () => {
         alreadyUser={() => {
           setIsRegisterModalOpen(false);
           setIsLoginModalOpen(true);
+        }}
+      />
+      <LoginToast
+        loginSubmit={isLoginSubmited}
+        closeToast={() => {
+          setIsLoginSubmited(false);
         }}
       />
     </>

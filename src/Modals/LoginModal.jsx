@@ -1,7 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-function LoginModal({ open, onClose }) {
+function LoginModal({ open, onClose, submited }) {
   return (
     <>
       <Modal show={open} onHide={onClose}>
@@ -44,8 +44,7 @@ function LoginModal({ open, onClose }) {
           <Button
             type="submit"
             className="btn mt-2 w-100"
-            variant="primary"
-            onClick={onClose}
+            onClick={(onClose, submited)}
           >
             Submit
           </Button>
