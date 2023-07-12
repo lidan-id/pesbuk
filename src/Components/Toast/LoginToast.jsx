@@ -3,9 +3,12 @@ import styles from "./styles.module.css";
 function LoginToast({ loginSubmit, closeToast }) {
   console.log(loginSubmit);
   useEffect(() => {
-    const timer = setTimeout(closeToast, 3000);
+    let timer;
+    if (loginSubmit) {
+      timer = setTimeout(closeToast, 3000);
+    }
     return () => clearTimeout(timer);
-  }, []);
+  }, [loginSubmit]);
   if (loginSubmit) {
     return (
       <div className={styles.container}>

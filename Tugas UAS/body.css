@@ -1,6 +1,3 @@
-.container{
-    padding-top: 80px;/*diubah*/
-}
 .isi {
     margin: 10px;
 }
@@ -24,7 +21,7 @@
 .koleksi {
     display: flex;
     width: calc(180px * 20);
-    animation: scroll 40s linear infinite;
+    /* animation: scroll 40s linear infinite; */
 }
 
 .koleksi:hover {
@@ -50,12 +47,12 @@
     perspective: 100px;
 }
 
-.imgBooks {
+img {
     width: 100%;
     transition: transform 1s;
 }
 
-.imgBooks:hover {
+img:hover {
     transform: translateZ(10px);
 }
 

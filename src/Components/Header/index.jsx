@@ -4,8 +4,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import logo from "./logo.png";
 import { useEffect, useState } from "react";
-import LoginModal from "../../Modals/LoginModal";
-import RegisterModal from "../../Modals/RegisterModal";
+import LoginModal from "../Modals/LoginModal";
+import RegisterModal from "../Modals/RegisterModal";
 import LoginToast from "../Toast/LoginToast";
 const Header = () => {
   useEffect(() => {
@@ -44,6 +44,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <div className={styles.navbar}>s</div>
       {/* <button onClick={()=>{navigate('/about')}}>SEE ABOUT</button> */}
       <LoginModal
         open={isLoginModalOpen}
