@@ -5,6 +5,7 @@
 .now-trending{
     font-size: x-large;
     padding: 10px;
+    padding-top: 15px;
     font-weight: bolder;
     background-color: black;
     color: #63aa00;
@@ -15,5 +16,9 @@
     gap: 10px;
     margin: 0 45px;
     flex-wrap: wrap;
+}
+.pcard{
+    display: flex;
+    justify-content: space-around;
 }
 

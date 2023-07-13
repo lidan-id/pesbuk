@@ -65,29 +65,22 @@
   color:#86c232 ;
   -webkit-text-stroke: 0.5px black;
 }
-.navbar{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #000000;
-  z-index: 3;
-  position: fixed;
-  width: 150px;
-  height: 40px;
-  right: 0;
-  top: 80px;
-}
+
 .home{
   color: white;
   cursor: pointer;
+  padding-right: 20px;
 }
 .home:hover{
   color: #86c232;
+  text-decoration: underline;
 }
 .books{
   color: white;
   cursor: pointer;
+  padding-right: 20px;
 }
 .books:hover{
   color: #86c232;
+  text-decoration: underline;
 }

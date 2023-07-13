@@ -4,15 +4,16 @@
 }
 .card {
     background-color: black;
+    transition: all 1s;
 }
 
+.card:hover{
+    transform: scale(1.04);
+}
 .books {
     width: 200px;
     height: 300px;
     object-fit: contain;
-}
-.card:hover{
-    transform: scale(1.09);
 }
 
 .title {
