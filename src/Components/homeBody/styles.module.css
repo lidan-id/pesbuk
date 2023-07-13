@@ -1,81 +1,19 @@
 .container{
-    padding-top: 80px;/*diubah*/
+    margin-top: 80px;
+    background-color: black;
 }
-.isi {
-    margin: 10px;
+.now-trending{
+    font-size: x-large;
+    padding: 10px;
+    font-weight: bolder;
+    background-color: black;
+    color: #63aa00;
 }
-
-.bungkus {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-}
-
-.galeri {
-    height: 300px;
-    margin: 10px 10px auto;
-    position: relative;
-    width: 90%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-}
-
-.koleksi {
+.collections{
     display: flex;
-    width: calc(180px * 20);
-    animation: scroll 40s linear infinite;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0 45px;
+    flex-wrap: wrap;
 }
 
-.koleksi:hover {
-    animation-play-state: paused;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-180px * 10))
-    }
-}
-
-.buku {
-    height: 200px;
-    width: 180px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    perspective: 100px;
-}
-
-.imgBooks {
-    width: 100%;
-    transition: transform 1s;
-}
-
-.imgBooks:hover {
-    transform: translateZ(10px);
-}
-
-.galeri::before,
-.galeri::after {
-    background: linear-gradient(to right, rgba(255, 255, 255, 1)0%, rgba(255, 255, 255, 0)100%);
-    content: '';
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
-}
-
-.galeri::before {
-    left: 0;
-    top: 0;
-}
-
-.galeri::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}

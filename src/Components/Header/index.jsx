@@ -46,10 +46,22 @@ const Header = () => {
         </div>
       </div>
       <div className={styles.navbar}>
-        <div onClick={navigate("./books")} className={styles.home}>
+        <div
+          onClick={() => {
+            navigate("/");
+          }}
+          className={styles.home}
+        >
           Home
         </div>
-        <div className={styles.books}>Books</div>
+        <div
+          onClick={() => {
+            navigate("/books");
+          }}
+          className={styles.books}
+        >
+          Books
+        </div>
       </div>
       {/* <button onClick={()=>{navigate('/about')}}>SEE ABOUT</button> */}
       <LoginModal

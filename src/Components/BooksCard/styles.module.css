@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    gap: 10px;
+}
+.card {
+    background-color: black;
+}
+
+.books {
+    width: 200px;
+    height: 300px;
+    object-fit: contain;
+}
+.card:hover{
+    transform: scale(1.09);
+}
+
+.title {
+    color: white;
+}
+
+.des {
+    color: white;
+    font-weight: bold;
+}
+
+.des:hover {
+    color: #86c232;
+    cursor: pointer;
+}
+.des-container{
+    color: white;
+    background-color: black;
+    width: 400px;
+}

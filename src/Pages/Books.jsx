@@ -1,6 +1,12 @@
 import Header from "../Components/Header";
+import BooksBody from "../Components/booksBody";
 const Books = () => {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <BooksBody />
+    </>
+  );
 };
 
 export default Books;

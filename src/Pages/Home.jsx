@@ -1,11 +1,11 @@
 import Header from "../Components/Header";
-import homeBody from "../Components/homeBody";
+import HomeBody from "../Components/homeBody";
 import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <>
       <Header />
-      <homeBody />
+      <HomeBody />
       <Footer />
     </>
   );
