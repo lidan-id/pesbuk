@@ -9,7 +9,7 @@ import b7 from "./Media/book7.webp";
 import b8 from "./Media/book8.webp";
 import b9 from "./Media/book9.webp";
 import ba from "./Media/bookA.webp";
-const Body = () => {
+const homeBody = () => {
   return (
     <>
       <div className={styles.container}>
@@ -84,4 +84,4 @@ const Body = () => {
     </>
   );
 };
-export default Body;
+export default homeBody;

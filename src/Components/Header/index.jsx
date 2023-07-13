@@ -8,6 +8,7 @@ import LoginModal from "../Modals/LoginModal";
 import RegisterModal from "../Modals/RegisterModal";
 import LoginToast from "../Toast/LoginToast";
 const Header = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     Aos.init();
   }, []);
@@ -44,7 +45,12 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={styles.navbar}>s</div>
+      <div className={styles.navbar}>
+        <div onClick={navigate("./books")} className={styles.home}>
+          Home
+        </div>
+        <div className={styles.books}>Books</div>
+      </div>
       {/* <button onClick={()=>{navigate('/about')}}>SEE ABOUT</button> */}
       <LoginModal
         open={isLoginModalOpen}
