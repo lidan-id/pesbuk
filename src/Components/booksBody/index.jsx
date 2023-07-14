@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import { useNavigate, Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import i1 from "./Media/ikon1.png";
 import i2 from "./Media/ikon2.png";
 import i3 from "./Media/ikon3.png";
@@ -32,11 +32,12 @@ const BooksCategory = (props) => {
 };
 const Books = (props) => {
   const navigate = useNavigate();
+
   return (
     <>
       <div
         onClick={() => {
-          navigate(`/books/${props.index}`);
+          navigate(`/books/${encodeURI(props.nama)}`);
         }}
         className={styles.sinopsis}
       >
@@ -121,7 +122,6 @@ const BooksBody = () => {
             />
           ))}
         </div>
-        <Outlet />
       </div>
     </>
   );

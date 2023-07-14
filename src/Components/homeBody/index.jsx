@@ -87,8 +87,12 @@ const HomeBody = () => {
       </div>
       <div className={styles["now-trending"]}>Current Promotions</div>
       <div className={styles.pcard}>
-        {promo.map((item) => (
-          <PromotionsCard image={item.image} text={item.text} />
+        {promo.map((item, index) => (
+          <PromotionsCard
+            image={item.image}
+            text={item.text}
+            key={index.toString()}
+          />
         ))}
       </div>
     </div>
