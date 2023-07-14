@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 function LoginToast({ loginSubmit, closeToast }) {
-  console.log(loginSubmit);
   useEffect(() => {
     let timer;
     if (loginSubmit) {
