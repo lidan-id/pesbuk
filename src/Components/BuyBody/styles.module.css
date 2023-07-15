@@ -140,7 +140,8 @@
     margin: 10% 0 10% 0;
 }
 
-.total {
+.total-harga {
+    display: flex;
     margin: 30% 0 0 0;
     max-height: 10%;
 }
