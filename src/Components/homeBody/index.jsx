@@ -18,30 +18,40 @@ const KOMIK = [
     description:
       "Naruto (ナルト) adalah sebuah serial manga karya Masashi Kishimoto yang diadaptasi menjadi serial anime. Manga Naruto bercerita seputar kehidupan tokoh utamanya, Naruto Uzumaki, seorang ninja yang hiperaktif, periang, dan ambisius yang ingin mewujudkan keinginannya untuk mendapatkan gelar Hokage,",
     image: b1,
+    pages: 103,
+    releaseYear: 2012,
   },
   {
     name: "One Piece",
     description:
       "One Piece (Jepang: ワンピース, Hepburn: Wan Pīsu) adalah sebuah seri manga Jepang yang ditulis dan diilustrasikan oleh Eiichiro Oda. Manga ini telah dimuat di majalah Weekly Shōnen Jump milik Shueisha sejak tanggal 22 Juli 1997, dan telah dibundel menjadi 105 volume tankōbon hingga Maret 2023. Ceritanya mengisahkan petualangan Monkey D. Luffy.",
     image: b2,
+    pages: 323,
+    releaseYear: 2004,
   },
   {
     name: "Demon Slayer",
     description:
       'Kimetsu no Yaiba (Jepang: 鬼滅の刃, terj. har. "Korps Pembasmi Iblis"[4]), yang diterbitkan di Indonesia dengan judul Demon Slayer: Kimetsu no Yaiba, adalah sebuah seri manga Jepang yang ditulis dan diilustrasikan oleh Koyoharu Gotōge. Ceritanya mengisahkan tentang Tanjiro Kamado, seorang anak laki-laki yang menjadi pembasmi iblis .',
     image: b3,
+    pages: 213,
+    releaseYear: 2010,
   },
   {
     name: "My Hero Academia",
     description:
       "Boku no Hero Academia (Jepang: 僕のヒーローアカデミア, Hepburn: Boku no Hīrō Akademia), yang diterbitkan di Indonesia dengan judul My Hero Academia, adalah sebuah seri manga shōnen Jepang bertema pahlawan super yang ditulis dan diilustrasikan oleh Kōhei Horikoshi. Manga ini mulai dimuat dalam majalah Weekly Shōnen Jump sejak bulan Juli 2014.",
     image: b4,
+    pages: 333,
+    releaseYear: 2003,
   },
   {
     name: "Spy x Family",
     description:
       "Spy x Family (Jepang: スパイファミリー) adalah sebuah seri manga web shōnen Jepang yang ditulis dan diilustrasikan oleh Tatsuya Endō (遠藤達哉). Manga ini mulai dimuat pada platform Shōnen Jump+ milik Shueisha sejak tanggal 25 Maret 2019, dan telah dibundel menjadi sebelas volume tankōbon.",
     image: b5,
+    pages: 65,
+    releaseYear: 2020,
   },
 ];
 const promo = [

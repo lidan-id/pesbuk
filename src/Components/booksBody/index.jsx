@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Outlet } from "react-router-dom";
 import i1 from "./Media/ikon1.png";
 import i2 from "./Media/ikon2.png";
 import i3 from "./Media/ikon3.png";
@@ -10,6 +10,7 @@ import i7 from "./Media/ikon7.png";
 import i8 from "./Media/ikon8.png";
 import i9 from "./Media/ikon9.png";
 import { KOMIK } from "../homeBody/index.jsx";
+import { useState } from "react";
 const BooksCategory = (props) => {
   return (
     <>
@@ -70,6 +71,8 @@ const Recommendation = (props) => {
   );
 };
 const BooksBody = () => {
+  const navigate = useNavigate();
+  const [show, setShow] = useState(false);
   return (
     <>
       <div className={styles.perpustakaan}>
@@ -122,8 +125,21 @@ const BooksBody = () => {
             />
           ))}
         </div>
+        <div className={styles.viewContainer}>
+          <div
+            onClick={() => {
+              setShow(!show);
+              show ? navigate("/books/allbooks") : navigate("/books");
+            }}
+            className={styles.viewAll}
+          >
+            View All
+          </div>
+        </div>
+        <Outlet />
       </div>
     </>
   );
 };
 export default BooksBody;
+export { Books, Recommendation };

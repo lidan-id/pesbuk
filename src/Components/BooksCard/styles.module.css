@@ -4,7 +4,7 @@
 }
 .card {
     background-color: black;
-    transition: all 1s;
+    transition: all .2s;
 }
 
 .card:hover{
